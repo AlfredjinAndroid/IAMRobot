@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/study_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <ImageButton
+                android:id="@+id/study_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/back"
+                />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/study_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/study_top"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="30dp">
+        </ListView>
+
+    </RelativeLayout>
+</layout>

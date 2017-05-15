@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_ion"
+            />
+
+        <RadioGroup
+            android:id="@+id/user_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_icon_police"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/police"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_icon_baby"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/baby"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_icon_panda"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:drawableRight="@drawable/icon36"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/set_robot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="机器人头像设置"
+            android:layout_below="@id/user_icon"
+            />
+
+        <RadioGroup
+            android:id="@+id/set_robot_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_robot"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_icon_wlle"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/wlle"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_icon_robotcat"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/robotcat"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_icon_roboticon"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:drawableRight="@drawable/roboticon"
+                />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/set_voice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="朗读声音选择"
+            android:layout_below="@id/set_robot_icon"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_voice"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/voice_0"
+                android:text="普通女声"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/voice_1"
+                android:text="普通男声"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/voice_2"
+                android:text="情感儿童"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/voice_3"
+                android:text="情感男声"
+                />
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/setting_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:text="@string/save"
+            />
+    </RelativeLayout>
+</layout>

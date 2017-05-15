@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    >
+
+    <ImageView
+        android:id="@+id/jt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/xiangxia"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/jt"
+        android:layout_marginBottom="-6dp"
+        android:background="@drawable/pop_shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/more_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/news_normal"
+                android:text="新闻"
+                />
+
+            <Button
+                android:id="@+id/more_xiaohua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/xiaohua"
+                android:text="笑话"
+                />
+
+            <Button
+                android:id="@+id/more_caidan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/caipu"
+                android:text="菜谱"
+                />
+
+            <Button
+                android:id="@+id/more_tianqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/tianqi"
+                android:text="天气"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hangban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/hangban"
+                android:text="航班"
+                />
+
+            <Button
+                android:id="@+id/raokouling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/raokouling"
+                android:text="绕口令"
+                />
+
+            <Button
+                android:id="@+id/chengyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/chengyu"
+                android:text="成语接龙"
+                />
+
+            <Button
+                android:id="@+id/gushi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/gushi"
+                android:text="故事大全"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/kuai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/kuai"
+        />
+</RelativeLayout>

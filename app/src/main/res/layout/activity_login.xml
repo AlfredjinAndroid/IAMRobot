@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/kjbg"
+        tools:context="com.alfredjin.iamrobot.activity.LoginActivity"
+        >
+
+        <ImageView
+            android:id="@+id/imglogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/register_icon"
+            android:src="@drawable/turingrobert"
+            />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/imglogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/login_edittext_shape"
+            android:hint="@string/input_username"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textColorHint="#d5d5d5"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/login_edittext_shape"
+            android:hint="@string/input_password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textColorHint="#d5d5d5"
+            />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/loginbutton_selector"
+            android:text="@string/login_str"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/login_btn"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/loginbutton_selector"
+            android:text="@string/str_register"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            />
+
+
+    </RelativeLayout>
+</layout>

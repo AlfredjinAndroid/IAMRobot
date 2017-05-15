@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pp_ll_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:alpha="0.4"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/pp_tv_item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/divider"
+            android:gravity="center"
+            android:text="复制"
+            android:textColor="#58B7FF"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/pp_tv_item2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/diver_center"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#F00"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            />
+        <TextView
+            android:id="@+id/pp_tv_item4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/diver_center"
+            android:gravity="center"
+            android:text="朗读"
+            android:textColor="@android:color/holo_green_light"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/pp_tv_item3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/divider_bottom"
+            android:gravity="center"
+            android:text="清空"
+
+            android:textColor="#58B7FF"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>
